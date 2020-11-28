@@ -1,1 +1,5 @@
 # linux_hacking
+
+References:
+
+* https://www.kernel.org/doc/html/latest/core-api/kernel-api.html#synchronization-primitives
