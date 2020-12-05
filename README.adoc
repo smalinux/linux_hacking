@@ -1,5 +1,16 @@
-# linux_hacking
+# lab
 
-References:
+How to watch dmesg live ?!
 
-* https://www.kernel.org/doc/html/latest/core-api/kernel-api.html#synchronization-primitives
+run this script: `sudo sh printk_live.sh`
+
+### link:../main/defer_printk.c[Why printk is not showing the latest output?]
+Sometimes `printk` may defer output (that is, message is stored in the internal buffer, but not in kernel log). To avoid such behavior, always add newline (`\n`) at the end of the string printed:
+....
+printk(KERN_ALERT "%s*\n*" ,mystring);
+....
+link:https://stackoverflow.com/a/47593056/5688267[Reference].
+
+### link:../main/core_api.c[Core APIs] module
+A simple practical uses of : `Documentation/core-api/kernel-api.rst`.
+
