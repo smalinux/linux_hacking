@@ -4,7 +4,7 @@ How to watch dmesg live ?!
 
 run this script: `sudo sh printk_live.sh`
 
-### link:../main/defer_printk.c[Why printk is not showing the latest output?]
+### link:../main/defer_printk.c[Why printk is not showing the latest output?] module
 Sometimes `printk` may defer output (that is, message is stored in the internal buffer, but not in kernel log). To avoid such behavior, always add newline (`\n`) at the end of the string printed:
 ....
 printk(KERN_ALERT "%s*\n*" ,mystring);
