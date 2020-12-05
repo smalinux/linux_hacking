@@ -36,6 +36,7 @@ static int hello_init(void)
 	 * num_to_str & snprintf
 	 * use EXPORT_SYMBOL(num_to_str) & uncomment #1 & #2 Line
 	 */
+//	EXPORT_SYMBOL_NOVERS(str_to_num);
 	int out;
 	char buf[10];
 	int buf_size;
@@ -91,6 +92,7 @@ static int hello_init(void)
 		return -ERANGE;
 	} else {
 		return -EINVAL;
+	}
 
 	/*
 	 * sprinf
