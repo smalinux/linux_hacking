@@ -14,3 +14,13 @@ link:https://stackoverflow.com/a/47593056/5688267[Reference].
 ### link:../main/core_api.c[Core APIs] module
 A simple practical uses of : `Documentation/core-api/kernel-api.rst`.
 
+### Kallsyms
+*This is for educational perposes*, most of kallsyms unexported of link:https://lwn.net/Articles/813350/[Linux 5.7] for security reasons.
+
+link:https://stackoverflow.com/a/37979809/5688267[How] to dump all kallsyms symbols? code. *TODO*.
+
+How to access address of any Linux symbol? link:https://www.google.com/search?q=access+function+kallsyms[Google].
+
+
+
+Read link:../main/TODO.adoc[TODO] later.

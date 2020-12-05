@@ -6,8 +6,7 @@
  */
 #include <linux/module.h>
 #include <linux/kernel.h>
-MODULE_LICENSE("GPL");
-MODULE_AUTHOR("smalinux <xunilams@gmail.com>");
+#include <linux/kallsyms.h>
 
 #define MODULE_NAME "core_api"
 
@@ -34,7 +33,6 @@ static int hello_init(void)
 	
 	/*
 	 * num_to_str & snprintf
-	 * use EXPORT_SYMBOL(num_to_str) & uncomment #1 & #2 Line
 	 */
 //	EXPORT_SYMBOL_NOVERS(str_to_num);
 	int out;
@@ -44,8 +42,22 @@ static int hello_init(void)
 	unsigned int width = 1;
 	snprintf(buf, 10, "%llu", in);
 	printk("snprintf = %s \n", buf);
-//	out = num_to_str(buf, 10, in, NULL);	// #1
-//	printk("num_to_str = %s \n", buf);		// #2
+	/*
+	 * num_to_str not exported symbol
+	 * SO, Let I will use /proc/kallsyms to hack it :D
+	out = num_to_str(buf, 10, in, NULL);
+	printk("num_to_str = %s \n", buf);
+	***********************************/
+	char NTS_buf[10];
+	int NTS_size = 10;
+	unsigned long long NTS_num = 123456789;
+	int NTS_width = 10;
+	int (*fun_ptr)(char *NTS_buf, int NTS_size,
+		unsigned long long NTS_num, unsigned int NTS_width) = (void*)kallsyms_lookup_name("num_to_str");
+	fun_ptr(NTS_buf, NTS_size, NTS_num, NTS_width);	
+	printk("num_to_str = %s \n", NTS_buf);
+	/***********************************/
+
 
 	/*
 	 * kstrto<foo> - Preferred over simple_strto<foo>.
@@ -147,3 +159,5 @@ static void hello_exit(void)
 
 module_init(hello_init);
 module_exit(hello_exit);
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("smalinux <xunilams@gmail.com>");
