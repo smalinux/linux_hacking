@@ -25,7 +25,7 @@ What is the difference between extern and EXPORT_SYMBOL
 
 Google: `The Kernel Symbol Table`, `EXPORT_SYMBOL`, `System.map`, `/proc/kallsyms`, 
 
-#### Technic #1
+#### Technic link:https://lists.kernelnewbies.org/pipermail/kernelnewbies/2014-January/009617.html[#1]
 http://stackoverflow.com/questions/11463184/how-to-use-exported-symbols-in-the-linux-kernel
 http://stackoverflow.com/questions/1196944/can-i-replace-a-linux-kernel-function-with-a-module
 
