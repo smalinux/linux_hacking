@@ -21,4 +21,7 @@ https://www.youtube.com/watch?v=GsMs3n8CB6g
 "You can be a kernel hacker!" by Julia Evans
 https://www.youtube.com/watch?v=0IQlpFWTFbM&t=1452s
 
+An adaptive approach for Linux memory analysis based on kernel code reconstruction
+https://link.springer.com/article/10.1186/s13635-016-0038-z
+
 
