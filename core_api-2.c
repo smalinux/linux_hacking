@@ -48,14 +48,14 @@ static int hello_init(void)
 	out = num_to_str(buf, 10, in, NULL);
 	printk("num_to_str = %s \n", buf);
 	***********************************/
-	char NTS_buf[10];
+	/* char NTS_buf[10];
 	int NTS_size = 10;
 	unsigned long long NTS_num = 123456789;
 	int NTS_width = 10;
 	int (*fun_ptr)(char *NTS_buf, int NTS_size,
 		unsigned long long NTS_num, unsigned int NTS_width) = (void*)kallsyms_lookup_name("num_to_str");
 	fun_ptr(NTS_buf, NTS_size, NTS_num, NTS_width);	
-	printk("num_to_str = %s \n", NTS_buf);
+	printk("num_to_str = %s \n", NTS_buf); */
 	/***********************************/
 
 

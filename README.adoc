@@ -20,7 +20,13 @@ A simple practical uses of : `Documentation/core-api/kernel-api.rst`.
 link:https://stackoverflow.com/a/37979809/5688267[How] to dump all kallsyms symbols? code. *TODO*.
 
 How to access address of any Linux symbol? link:https://www.google.com/search?q=access+function+kallsyms[Google].
+You really NEED to understand what is the meaning of EXPORT_SYMBOL,
+What is the difference between extern and EXPORT_SYMBOL
 
+Google: `The Kernel Symbol Table`, `EXPORT_SYMBOL`, `System.map`, `/proc/kallsyms`, 
 
+#### Technic #1
+http://stackoverflow.com/questions/11463184/how-to-use-exported-symbols-in-the-linux-kernel
+http://stackoverflow.com/questions/1196944/can-i-replace-a-linux-kernel-function-with-a-module
 
 Read link:../main/TODO.adoc[TODO] later.

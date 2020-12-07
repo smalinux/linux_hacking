@@ -2,13 +2,23 @@ https://stackoverflow.com/questions/29728505/how-to-access-a-processs-kernel-sta
 
 https://www.youtube.com/watch?v=JRyrhsx-L5Y
 
+https://www.youtube.com/watch?v=NhNUXMLstRg
 
+Introduction to Memory Management in Linux
+https://www.youtube.com/watch?v=7aONIVSXiJ8
 
+Tim Beale: Linux Kernel Development for Newbies
+https://www.youtube.com/watch?v=OkhOoBqLb3Y
 
+ALL Linux Foundation videos
 
+Write and Submit your first Linux kernel Patch
+https://www.youtube.com/watch?v=LLBrBBImJt4
 
+Give me 15 minutes and I'll change your view of Linux tracing
+https://www.youtube.com/watch?v=GsMs3n8CB6g
 
-
-
+"You can be a kernel hacker!" by Julia Evans
+https://www.youtube.com/watch?v=0IQlpFWTFbM&t=1452s
 
 

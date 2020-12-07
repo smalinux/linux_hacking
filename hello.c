@@ -1,7 +1,7 @@
 /*
  * @file	hello.c
  * @details	Simple linux kernel module
- * @author	smalinux
+ * @author	smalinux<xunilams@gmail.com>
  *
  */
 #include <linux/init.h>
@@ -9,15 +9,17 @@
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("smalinux <xunilams@gmail.com>");
 
+#define MODULE_NAME "hello"
+
 static int hello_init(void)
 {
-	pr_err("Hello, world\n");
+	pr_info(MODULE_NAME ": module loaded!\n");
 	return 0;
 }
 
 static void hello_exit(void)
 {
-	pr_err("Goodbye, cruel world\n");
+	pr_info(MODULE_NAME ": module unloaded!\n");
 }
 
 module_init(hello_init);
