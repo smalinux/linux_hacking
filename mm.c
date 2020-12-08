@@ -3,6 +3,10 @@
  * @details	Simple linux kernel module
  * @author	smalinux<xunilams@gmail.com>
  *
+ * What are practical applications of weak linking???!!
+ * Google: weak symbols, weak linking
+ * https://www.quora.com/What-are-strong-and-weak-symbols-in-C/answer/Adrian-Ho-2
+ * https://stackoverflow.com/q/15525537/5688267
  *
  */
 #include <linux/init.h>
@@ -17,10 +21,13 @@ struct task_struct smalinux_ts;
 int smalinux_i;
 int smalinux_ii = 7;
 int smalinux_iii[10];
-//int __attribute__((weak)) i_weak;	// weak definition 
-extern int smalinux_ud;		// undefined symbol
+void *p = 0;
+extern void* smalinux_U;
+//int __attribute__((weak)) i_weak;	// weak definition
 
-extern int sum(int s1, int s2) {
+
+int sum(int s1, int s2) {
+	find_get_pid(1);
 	int sum;
 	sum = s1 + s2;
 	return sum;
@@ -33,6 +40,7 @@ static int hello_init(void)
 
 	sss = sum(1, 2);
 	printk("Sum: %d\n", sss);
+//	printk("Week: %d\n", i_weak); 
 	return 0;
 }
 

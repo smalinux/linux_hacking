@@ -15,6 +15,11 @@ link:https://stackoverflow.com/a/47593056/5688267[Reference].
 A simple practical uses of : `Documentation/core-api/kernel-api.rst`.
 
 ### Kallsyms
+what is kallsyms? Google: "kallsyms man", but man page will not enough.
+link:Xhttps://onebitbug.me/2011/03/04/introducing-linux-kernel-symbols/[this] will be enough! ))
+
+link:https://stackoverflow.com/a/28938043/5688267[`System.map` file vs `/proc/kallsyms`]?
+
 *This is for educational perposes*, most of kallsyms unexported of link:https://lwn.net/Articles/813350/[Linux 5.7] for security reasons.
 
 "Functions and variables which are exported through EXPORT_SYMBOL is for kernel module code.
@@ -27,7 +32,7 @@ You really NEED to understand what is the meaning of EXPORT_SYMBOL,
 What is the difference between extern and EXPORT_SYMBOL -> Google,
 link:https://stackoverflow.com/a/57881867/5688267[quora].
 
-Google: `The Kernel Symbol Table`, `EXPORT_SYMBOL`, `System.map`, `/proc/kallsyms`, 
+Google: `The Kernel Symbol Table`, `EXPORT_SYMBOL`, `System.map`, `/proc/kallsyms`, `"EXPORT_SYMBOL lwn.net"`
 
 #### Technic link:https://lists.kernelnewbies.org/pipermail/kernelnewbies/2014-January/009617.html[#1]
 http://stackoverflow.com/questions/11463184/how-to-use-exported-symbols-in-the-linux-kernel
@@ -40,7 +45,7 @@ This simple program will help you by listing all symbols to dump your memory.
 How to use it?
 ....
 nm file.o
-nm module.ko
+nm mm.ko
 ....
 
 Output sample:
@@ -64,7 +69,13 @@ Output sample:
 ....
 
 
+### string.h
+`Documentation/core-api/kernel-api.rst`
 
+How to use it:
+....
+insmod string.ko
+....
 
 
 
