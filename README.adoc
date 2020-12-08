@@ -69,7 +69,7 @@ Output sample:
 ....
 
 
-### string.h
+### link:../main/string.c[String] manipulation module
 `Documentation/core-api/kernel-api.rst`
 
 How to use it:
