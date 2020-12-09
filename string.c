@@ -143,7 +143,9 @@ static int hello_init(void)
 
 	/*
 	 * ????
-	 * __sysfs_match_string
+	 * sysfs_streq
+	 * sysfs_match_string
+	 * 	__sysfs_match_string
 	 * check_bytes8
 	 */	
 	

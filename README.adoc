@@ -1,5 +1,14 @@
 # 
 
+### Build the documentation
+You don’t need to depend on GitHub.
+
+For a quick and dirty build, install Asciidoctor however you like and build:
+....
+asciidoctor README.adoc
+xdg-open README.html
+....
+
 How to watch dmesg live ?!
 
 run this script: `sudo sh printk_live.sh`
