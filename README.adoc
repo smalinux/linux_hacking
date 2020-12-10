@@ -86,6 +86,7 @@ How to use it:
 insmod string.ko
 ....
 
+### link:https://github.com/cirosantilli/linux-kernel-module-cheat#gdb[GDB with linux]
 
 
 Read link:../main/TODO.adoc[TODO] later.
