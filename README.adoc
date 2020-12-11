@@ -87,18 +87,79 @@ insmod string.ko
 ....
 
 ### link:https://github.com/cirosantilli/linux-kernel-module-cheat#gdb[GDB with linux]
+Google: gdb kernel.
+to understand the theary.
 
 
-### link:https://github.com/smalinux/linux-kernel-module-cheat#gdb[KGDB with linux]
+### link:https://github.com/smalinux/linux-kernel-module-cheat#kgdb[KGDB with linux]
 (link:https://youtu.be/PyKqQ05w_UY[See my demo])
 
 Very nice and basic link:https://www.youtube.com/watch?v=67cxIXLCfUk[video] tutorial show you the basic idea behind kgdb.
-Thankfully YouTube has all of tutorials you can hack this topic with them. 
+Thankfully, YouTube has all of tutorials you can hack this topic with them. 
+
+link:https://unix.stackexchange.com/a/364966/265591[Serial port]
 
 References:
 
-* https://github.com/smalinux/linux-kernel-module-cheat#33-kdb
+* https://github.com/smalinux/linux-kernel-module-cheat#kgdb
 * `Documentation/dev-tools/kgdb.rst`
+* https://youtu.be/HBOwoSyRmys
+
+
+
+
+### Oops
+Decoding an oops:
+
+* CONFIG_DEBUG_INFO
+* addr2line (man it!)
+* gdb
+* objdump
+* objdump -dSr
+
+References:
+
+* `Documentation/admin-guide/bug-hunting.rst`
+* https://linux-kernel-labs.github.io/refs/heads/master/lectures/debugging.html
+
+#### stack trace ?!
+link:https://stackoverflow.com/a/13468456/5688267[__1__],
+link:https://github.com/cirosantilli/linux-kernel-module-cheat/tree/b8f190cc24b4f7474894b68a5510a8f3d767843d#kernel-panic-and-oops[__2__],
+link:https://developer.squareup.com/blog/a-short-guide-to-kernel-debugging/[__3__],
+link:https://embeddedbits.org/tracing-the-linux-kernel-with-ftrace/[__4__],
+link:https://stackoverflow.com/a/16742918/5688267[__5__],
+link:https://www.kernel.org/doc/html/latest/trace/ftrace.html[__6__],
+link:https://d3s.mff.cuni.cz/files/teaching/nswi161/slides/06_debugging.pdf[__7__],
+link:https://serverfault.com/questions/605946/kernel-stack-trace-to-source-code-lines[__8__],
+
+
+Memory debugging
+
+There are several tools for memory debugging:
+
+    SLAB/SLUB debugging
+    KASAN
+    kmemcheck
+    DEBUG_PAGEALLOC
+
+
+
+#### Read Later:
+
+??? https://www.dedoimedo.com/computers/crash-analyze.html
+
+
+< API >>> https://kernelnewbies.org/ABI
+....
+Documentation/admin-guide/bug-hunting.rst
+Documentation/admin-guide/kdump/kdump.rst
+Documentation/dev-tools/gdb-kernel-debugging.rst
+Documentation/dev-tools/kgdb.rst
+Documentation/trace/kprobes.rst
+....
+
+
+
 
 
 
