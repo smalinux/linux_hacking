@@ -89,4 +89,18 @@ insmod string.ko
 ### link:https://github.com/cirosantilli/linux-kernel-module-cheat#gdb[GDB with linux]
 
 
+### link:https://github.com/smalinux/linux-kernel-module-cheat#gdb[KGDB with linux]
+(link:https://youtu.be/PyKqQ05w_UY[See my demo])
+
+Very nice and basic link:https://www.youtube.com/watch?v=67cxIXLCfUk[video] tutorial show you the basic idea behind kgdb.
+Thankfully YouTube has all of tutorials you can hack this topic with them. 
+
+References:
+
+* https://github.com/smalinux/linux-kernel-module-cheat#33-kdb
+* `Documentation/dev-tools/kgdb.rst`
+
+
+
+
 Read link:../main/TODO.adoc[TODO] later.
