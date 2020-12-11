@@ -133,14 +133,27 @@ link:https://d3s.mff.cuni.cz/files/teaching/nswi161/slides/06_debugging.pdf[__7_
 link:https://serverfault.com/questions/605946/kernel-stack-trace-to-source-code-lines[__8__],
 
 
-Memory debugging
-
+#### Memory debugging
 There are several tools for memory debugging:
 
-    SLAB/SLUB debugging
-    KASAN
-    kmemcheck
-    DEBUG_PAGEALLOC
+* SLAB/SLUB debugging
+* KASAN
+* kmemcheck
+* DEBUG_PAGEALLOC
+
+#### Lockdep checker
+
+#### perf
+
+#### Other tools
+
+* ftrace
+* kprobes
+* sparse
+* coccinelle
+* checkpatch.pl
+* printk
+* dump_stack()
 
 
 
