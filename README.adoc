@@ -149,14 +149,14 @@ DEBUG_PAGEALLOC
 
 #### Other tools
 
-.....
+....
 ftrace
 kprobes
 sparse
 coccinelle
 checkpatch.pl
 printk
-dump_stack()
+dump_stack() 
 ....
 
 
