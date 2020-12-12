@@ -105,7 +105,8 @@ References:
 * `Documentation/dev-tools/kgdb.rst`
 * https://youtu.be/HBOwoSyRmys
 
-
+### GDBServer
+(Video link:https://youtu.be/nyXDPnwekWo[Demo]).
 
 
 ### Oops
@@ -122,7 +123,7 @@ References:
 * `Documentation/admin-guide/bug-hunting.rst`
 * https://linux-kernel-labs.github.io/refs/heads/master/lectures/debugging.html
 
-#### stack trace ?!
+#### Stack trace ?!
 link:https://stackoverflow.com/a/13468456/5688267[__1__],
 link:https://github.com/cirosantilli/linux-kernel-module-cheat/tree/b8f190cc24b4f7474894b68a5510a8f3d767843d#kernel-panic-and-oops[__2__],
 link:https://developer.squareup.com/blog/a-short-guide-to-kernel-debugging/[__3__],
@@ -145,7 +146,11 @@ DEBUG_PAGEALLOC
 
 #### Lockdep checker
 
-#### perf
+#### TODO: perf
+....
+youTube:Kernel Recipes 2017 - Perf in Netflix - Brendan Gregg
+youTube: linux kernel perf
+....
 
 #### Other tools
 
@@ -173,6 +178,41 @@ Documentation/dev-tools/gdb-kernel-debugging.rst
 Documentation/dev-tools/kgdb.rst
 Documentation/trace/kprobes.rst
 ....
+
+
+### initrd? initramfs?
+link:https://www.quora.com/What-is-the-relationship-between-initrd-and-initramfs[Both] initrd and initramfs are works on same concept, that "early user space" 
+root file system that can be used to get at least the minimum functionality 
+loaded in order to let the boot process continue.
+
+References:
+
+* The Kernel Newbie Corner: “initrd” and “initramfs”–What’s Up With That?
+* `Documentation/filesystems/ramfs-rootfs-initramfs.rst`
+
+Google:
+....
+- wiki Initial_ramdisk
+....
+
+## TODO: GDB Cheat
+link:https://youtu.be/bAZTd769y8E[__1__],
+
+Lovely GUI!
+....
+(gdb) b do_mkdirat
+(gdb) win
+....
+
+
+
+
+
+
+
+
+
+
 
 
 
