@@ -105,8 +105,9 @@ References:
 * `Documentation/dev-tools/kgdb.rst`
 * https://youtu.be/HBOwoSyRmys
 
-### GDBServer
-(Video link:https://youtu.be/nyXDPnwekWo[Demo]).
+### link:https://github.com/smalinux/linux-kernel-module-cheat#gdbserver[GDBServer]
+
+Video link:https://youtu.be/nyXDPnwekWo[Demo].
 
 
 ### Oops
@@ -204,10 +205,18 @@ Lovely GUI!
 (gdb) win
 ....
 
+### BusyBox?!
+A small version of GNU coreutils for embedded systems and Android. 
+See also link:https://github.com/uutils/coreutils[uutils], link:https://github.com/landley/toybox[toybox]
 
+### Write your own `insmod` and `rmmod`
+Source:
 
+* link:https://github.com/smalinux/linux-kernel-module-cheat/blob/master/userland/linux/myinsmod.c[userland/linux/myinsmod.c]
+* link:https://github.com/smalinux/linux-kernel-module-cheat/blob/master/userland/linux/myrmmod.c[userland/linux/myrmmod.c]
 
-
+link:https://git.busybox.net/busybox/tree/modutils/insmod.c?h=1_29_3[insmod] and 
+link:https://git.busybox.net/busybox/tree/modutils/modprobe.c?h=1_29_stable[modprobe] provided by BusyBox.
 
 
 
