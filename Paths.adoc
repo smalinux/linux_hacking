@@ -1,0 +1,28 @@
+Paths
+
+Questions tagged [linux-kernel]
+	https://stackoverflow.com/questions/tagged/linux-kernel?tab=Votes
+
+Quora Robert Love
+	https://www.quora.com/profile/Robert-Love-1/answers
+
+The Art of Unix Programming - Eric Steven Raymond
+
+
+The Kernel Newbie Corner
+	https://gist.github.com/smalinux/52a4b28da519d418693cd3d9e033cd24
+
+
+https://www.youtube.com/channel/UCQraBsguF59oYKCdalrbZqA/videos
+
+
+
+
+
+OverlayFS
+	https://github.com/cirosantilli/linux-kernel-module-cheat#filesystems
+	https://en.wikipedia.org/wiki/OverlayFS
+	https://blog.programster.org/overlayfs
+	https://www.educative.io/edpresso/what-is-overlayfs
+	https://www.grant.pizza/blog/overlayfs/
+

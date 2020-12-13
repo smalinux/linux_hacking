@@ -5,6 +5,7 @@
  *
  * 1. back to how to use "match_string"
  * 2. what is the diff of all these similar functions?!
+ * 3. Google: memcmp vs strcmp
  *
  */
 #include <linux/module.h>
