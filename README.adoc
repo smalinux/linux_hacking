@@ -228,6 +228,11 @@ what is uint64_t -
 memset64 - 
 
 
+### X11!?
+What's X? Google link:https://unix.stackexchange.com/questions/276168/what-is-x11-exactly[it]. 
+I think link:https://web.archive.org/web/20200927135426/https://www.geeks3d.com/20120102/programming-tutorial-simple-x11-x-window-code-sample-for-linux-and-mac-os-x/[this] webpage is bretty good to start with.
+
+Minimal window creation link:https://gist.github.com/smalinux/e17d48077b86cc2cbada0667ff7bdde8[example].
 
 
 
