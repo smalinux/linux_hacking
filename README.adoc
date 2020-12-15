@@ -1,5 +1,7 @@
 # 
 
+:cirosantilli-media-base: https://raw.githubusercontent.com/cirosantilli/media/master/
+:description: hacking linux kernel
 :idprefix:
 :idseparator: -
 :nofooter:
