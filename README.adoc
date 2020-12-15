@@ -13,7 +13,7 @@
 :toc: macro
 :toclevels: 6
 
-toc::[]
+:toc:
 
 ### Build the documentation
 You don’t need to depend on GitHub.
