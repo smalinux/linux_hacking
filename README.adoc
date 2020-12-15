@@ -15,7 +15,7 @@
 
 :toc:
 
-### Build the documentation
+=== Build the documentation
 You don’t need to depend on GitHub.
 
 For a quick and dirty build, install Asciidoctor however you like and build:
