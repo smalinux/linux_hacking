@@ -24,4 +24,21 @@ https://www.youtube.com/watch?v=0IQlpFWTFbM&t=1452s
 An adaptive approach for Linux memory analysis based on kernel code reconstruction
 https://link.springer.com/article/10.1186/s13635-016-0038-z
 
+### Qemu:
+https://www.youtube.com/watch?v=PBY9l97-lto
+
+### Yocto Project 
+https://www.youtube.com/user/TheYoctoProject/videos
+https://www.youtube.com/watch?v=Zi6ooCultI0&t=2314s
+
+### Write and Submit your first Linux kernel Patch
+https://www.kernel.org/doc/html/latest/process/index.html
+https://www.youtube.com/watch?v=LLBrBBImJt4
+https://www.google.com/search?client=firefox-b-d&q=Write+and+Submit+your+first+Linux+kernel+Patch
+
+### Debugging/Prfiling
+https://www.youtube.com/watch?v=9OrTqDIjpLc
+https://www.youtube.com/watch?v=NDXYpR_m1CU
+https://www.youtube.com/watch?v=JRyrhsx-L5Y
+
 

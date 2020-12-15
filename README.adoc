@@ -228,12 +228,29 @@ what is uint64_t -
 memset64 - 
 
 
-### X11!?
-What's X? Google link:https://unix.stackexchange.com/questions/276168/what-is-x11-exactly[it]. 
+### X11!? What's X? Google link:https://unix.stackexchange.com/questions/276168/what-is-x11-exactly[it]. 
+see link:https://www.youtube.com/watch?v=4J5snV2wjtw[also].
+
+link:https://unix.stackexchange.com/questions/568634/how-does-a-linux-gui-work-at-the-lowest-level[How does a linux GUI work at the lowest level?]
+
 I think link:https://web.archive.org/web/20200927135426/https://www.geeks3d.com/20120102/programming-tutorial-simple-x11-x-window-code-sample-for-linux-and-mac-os-x/[this] webpage is bretty good to start with.
 
 Minimal window creation link:https://gist.github.com/smalinux/e17d48077b86cc2cbada0667ff7bdde8[example].
 
+TODO: developing a linux driver for X server and custom display hardware:
+https://stackoverflow.com/questions/52143429/developing-a-linux-driver-for-x-server-and-custom-display-hardware
+https://unix.stackexchange.com/questions/40979/why-need-drivers-for-both-x-server-and-the-linux-kernel
+
+
+link:https://unix.stackexchange.com/questions/361352/how-does-x11-interact-with-the-kernel-perform-login[How does X11 interact with the kernel / perform login]
+
+link:https://blogs.igalia.com/itoral/2014/07/29/a-brief-introduction-to-the-linux-graphics-stack/[A brief introduction to the Linux graphics stack]
+
+link:https://blog.mecheye.net/2012/06/the-linux-graphics-stack/[The Linux Graphics Stack]
+
+
+### Linux kernel coding style
+link:https://www.kernel.org/doc/html/v4.10/process/coding-style.html[`Documentation/process/coding-style.rst`]. 
 
 
 
@@ -242,4 +259,3 @@ Minimal window creation link:https://gist.github.com/smalinux/e17d48077b86cc2cba
 
 
 Read link:../main/TODO.adoc[TODO] later.
-Read link:../main/Paths.adoc[Paths].
