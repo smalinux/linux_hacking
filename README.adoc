@@ -1,5 +1,16 @@
 # 
 
+:idprefix:
+:idseparator: -
+:nofooter:
+:sectanchors:
+:sectlinks:
+:sectnumlevels: 6
+:sectnums:
+:toc-title:
+:toc: macro
+:toclevels: 6
+
 toc::[]
 
 ### Build the documentation
