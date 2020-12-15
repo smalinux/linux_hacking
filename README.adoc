@@ -1,5 +1,7 @@
 # 
 
+toc::[]
+
 ### Build the documentation
 You don’t need to depend on GitHub.
 
@@ -244,9 +246,13 @@ https://unix.stackexchange.com/questions/40979/why-need-drivers-for-both-x-serve
 
 link:https://unix.stackexchange.com/questions/361352/how-does-x11-interact-with-the-kernel-perform-login[How does X11 interact with the kernel / perform login]
 
+link:https://medium.com/mindorks/x-server-client-what-the-hell-305bd0dc857f[X Server-Client!! What the hell?]
+
 link:https://blogs.igalia.com/itoral/2014/07/29/a-brief-introduction-to-the-linux-graphics-stack/[A brief introduction to the Linux graphics stack]
 
 link:https://blog.mecheye.net/2012/06/the-linux-graphics-stack/[The Linux Graphics Stack]
+
+link:https://unix.stackexchange.com/questions/159530/why-does-the-x-window-system-use-a-server[Why does the X Window System use a server?]
 
 
 ### Linux kernel coding style
