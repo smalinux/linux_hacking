@@ -200,7 +200,7 @@ loaded in order to let the boot process continue.
 
 References:
 
-* The Kernel Newbie Corner: “initrd” and “initramfs”–What’s Up With That?
+* https://gist.github.com/smalinux/52a4b28da519d418693cd3d9e033cd24:[The Kernel Newbie Corner: “initrd” and “initramfs”–What’s Up With That?]
 * `Documentation/filesystems/ramfs-rootfs-initramfs.rst`
 * https://github.com/cirosantilli/linux-kernel-module-cheat#initrd[]
 
