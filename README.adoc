@@ -15,7 +15,7 @@
 
 toc::[]
 
-=== Build the documentation
+### Build the documentation
 You don’t need to depend on GitHub.
 
 For a quick and dirty build, install Asciidoctor however you like and build:
@@ -28,17 +28,17 @@ How to watch dmesg live ?!
 
 run this script: `sudo sh printk_live.sh`
 
-=== link:../main/defer_printk.c[Why printk is not showing the latest output?] module
+### link:../main/defer_printk.c[Why printk is not showing the latest output?] module
 Sometimes `printk` may defer output (that is, message is stored in the internal buffer, but not in kernel log). To avoid such behavior, always add newline (`\n`) at the end of the string printed:
 ....
 printk(KERN_ALERT "%s*\n*" ,mystring);
 ....
 link:https://stackoverflow.com/a/47593056/5688267[Reference].
 
-=== link:../main/core_api.c[Core APIs] module
+### link:../main/core_api.c[Core APIs] module
 A simple practical uses of : `Documentation/core-api/kernel-api.rst`.
 
-=== Kallsyms
+### Kallsyms
 what is kallsyms? Google: "kallsyms man", but man page will not enough.
 link:Xhttps://onebitbug.me/2011/03/04/introducing-linux-kernel-symbols/[this] will be enough! ))
 
@@ -58,11 +58,11 @@ link:https://stackoverflow.com/a/57881867/5688267[quora].
 
 Google: `The Kernel Symbol Table`, `EXPORT_SYMBOL`, `System.map`, `/proc/kallsyms`, `"EXPORT_SYMBOL lwn.net"`
 
-===# Technic link:https://lists.kernelnewbies.org/pipermail/kernelnewbies/2014-January/009617.html[#1]
+#### Technic link:https://lists.kernelnewbies.org/pipermail/kernelnewbies/2014-January/009617.html[#1]
 http://stackoverflow.com/questions/11463184/how-to-use-exported-symbols-in-the-linux-kernel
 http://stackoverflow.com/questions/1196944/can-i-replace-a-linux-kernel-function-with-a-module
 
-===# man nm
+#### man nm
 This simple program will help you by listing all symbols to dump your memory.
 `man nm` has a meaning of every abbr.
 
@@ -93,7 +93,7 @@ Output sample:
 ....
 
 
-=== link:../main/string.c[String] manipulation module
+### link:../main/string.c[String] manipulation module
 `Documentation/core-api/kernel-api.rst`
 
 How to use it:
@@ -101,12 +101,12 @@ How to use it:
 insmod string.ko
 ....
 
-=== link:https://github.com/cirosantilli/linux-kernel-module-cheat#gdb[GDB with linux]
+### link:https://github.com/cirosantilli/linux-kernel-module-cheat#gdb[GDB with linux]
 Google: gdb kernel.
 to understand the theary.
 
 
-=== link:https://github.com/smalinux/linux-kernel-module-cheat#kgdb[KGDB with linux]
+### link:https://github.com/smalinux/linux-kernel-module-cheat#kgdb[KGDB with linux]
 (link:https://youtu.be/PyKqQ05w_UY[See my demo])
 
 Very nice and basic link:https://www.youtube.com/watch?v=67cxIXLCfUk[video] tutorial show you the basic idea behind kgdb.
@@ -120,12 +120,12 @@ References:
 * `Documentation/dev-tools/kgdb.rst`
 * https://youtu.be/HBOwoSyRmys
 
-=== link:https://github.com/smalinux/linux-kernel-module-cheat#gdbserver[GDBServer]
+### link:https://github.com/smalinux/linux-kernel-module-cheat#gdbserver[GDBServer]
 
 Video link:https://youtu.be/nyXDPnwekWo[Demo].
 
 
-=== Oops
+### Oops
 Decoding an oops:
 
 * CONFIG_DEBUG_INFO
@@ -139,7 +139,7 @@ References:
 * `Documentation/admin-guide/bug-hunting.rst`
 * https://linux-kernel-labs.github.io/refs/heads/master/lectures/debugging.html
 
-===# Stack trace ?!
+#### Stack trace ?!
 link:https://stackoverflow.com/a/13468456/5688267[__1__],
 link:https://github.com/cirosantilli/linux-kernel-module-cheat/tree/b8f190cc24b4f7474894b68a5510a8f3d767843d#kernel-panic-and-oops[__2__],
 link:https://developer.squareup.com/blog/a-short-guide-to-kernel-debugging/[__3__],
@@ -150,7 +150,7 @@ link:https://d3s.mff.cuni.cz/files/teaching/nswi161/slides/06_debugging.pdf[__7_
 link:https://serverfault.com/questions/605946/kernel-stack-trace-to-source-code-lines[__8__],
 
 
-===# Memory debugging
+#### Memory debugging
 There are several tools for memory debugging:
 
 ....
@@ -160,15 +160,15 @@ kmemcheck
 DEBUG_PAGEALLOC
 ....
 
-===# Lockdep checker
+#### Lockdep checker
 
-===# TODO: perf
+#### TODO: perf
 ....
 youTube:Kernel Recipes 2017 - Perf in Netflix - Brendan Gregg
 youTube: linux kernel perf
 ....
 
-===# Other tools
+#### Other tools
 
 ....
 ftrace
@@ -181,7 +181,7 @@ dump_stack()
 ....
 
 
-===# Read Later:
+#### Read Later:
 
 ??? https://www.dedoimedo.com/computers/crash-analyze.html
 
@@ -196,7 +196,7 @@ Documentation/trace/kprobes.rst
 ....
 
 
-=== initrd? initramfs?
+### initrd? initramfs?
 link:https://www.quora.com/What-is-the-relationship-between-initrd-and-initramfs[Both] initrd and initramfs are works on same concept, that "early user space" 
 root file system that can be used to get at least the minimum functionality 
 loaded in order to let the boot process continue.
@@ -220,11 +220,11 @@ Lovely GUI!
 (gdb) win
 ....
 
-=== BusyBox?!
+### BusyBox?!
 A small version of GNU coreutils for embedded systems and Android. 
 See also link:https://github.com/uutils/coreutils[uutils], link:https://github.com/landley/toybox[toybox]
 
-=== Write your own `insmod` and `rmmod`
+### Write your own `insmod` and `rmmod`
 Source:
 
 * link:https://github.com/smalinux/linux-kernel-module-cheat/blob/master/userland/linux/myinsmod.c[userland/linux/myinsmod.c]
@@ -234,16 +234,16 @@ link:https://git.busybox.net/busybox/tree/modutils/insmod.c?h=1_29_3[insmod] and
 link:https://git.busybox.net/busybox/tree/modutils/modprobe.c?h=1_29_stable[modprobe] provided by BusyBox.
 
 
-=== Kernel IPC linux
+### Kernel IPC linux
 Google: Kernel IPC linux
 
 
-=== Google
+### Google
 what is uint64_t - 
 memset64 - 
 
 
-=== X11!? What's X? Google link:https://unix.stackexchange.com/questions/276168/what-is-x11-exactly[it]. 
+### X11!? What's X? Google link:https://unix.stackexchange.com/questions/276168/what-is-x11-exactly[it]. 
 see link:https://www.youtube.com/watch?v=4J5snV2wjtw[also].
 
 link:https://unix.stackexchange.com/questions/568634/how-does-a-linux-gui-work-at-the-lowest-level[How does a linux GUI work at the lowest level?]
@@ -256,7 +256,6 @@ TODO: developing a linux driver for X server and custom display hardware:
 https://stackoverflow.com/questions/52143429/developing-a-linux-driver-for-x-server-and-custom-display-hardware
 https://unix.stackexchange.com/questions/40979/why-need-drivers-for-both-x-server-and-the-linux-kernel
 
-
 link:https://unix.stackexchange.com/questions/361352/how-does-x11-interact-with-the-kernel-perform-login[How does X11 interact with the kernel / perform login]
 
 link:https://medium.com/mindorks/x-server-client-what-the-hell-305bd0dc857f[X Server-Client!! What the hell?]
@@ -267,14 +266,19 @@ link:https://blog.mecheye.net/2012/06/the-linux-graphics-stack/[The Linux Graphi
 
 link:https://unix.stackexchange.com/questions/159530/why-does-the-x-window-system-use-a-server[Why does the X Window System use a server?]
 
-
-=== Linux kernel coding style
+### Linux kernel coding style
 link:https://www.kernel.org/doc/html/v4.10/process/coding-style.html[`Documentation/process/coding-style.rst`]. 
 
+### NFS
+Welcome to link:https://cs.stackexchange.com/a/81173[Computer Science!]
+
+Google: "Network File Systems linux source code"
 
 
 
 
 
 
+
+Read link:https://github.com/cirosantilli/linux-kernel-module-cheat/wiki[Backlinks].
 Read link:../main/TODO.adoc[TODO] later.
