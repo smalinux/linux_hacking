@@ -209,7 +209,8 @@ Google:
 - wiki Initial_ramdisk
 ....
 
-## TODO: GDB Cheat
+### TODO: GDB Cheat
+Study GDB: 
 link:https://youtu.be/bAZTd769y8E[__1__],
 
 Lovely GUI!
@@ -222,7 +223,7 @@ Lovely GUI!
 A small version of GNU coreutils for embedded systems and Android. 
 See also link:https://github.com/uutils/coreutils[uutils], link:https://github.com/landley/toybox[toybox]
 
-### Write your own `insmod` and `rmmod`
+#### Write your own `insmod` and `rmmod`
 Source:
 
 * link:https://github.com/smalinux/linux-kernel-module-cheat/blob/master/userland/linux/myinsmod.c[userland/linux/myinsmod.c]
