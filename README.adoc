@@ -58,7 +58,9 @@ link:https://stackoverflow.com/a/57881867/5688267[quora].
 
 Google: `The Kernel Symbol Table`, `EXPORT_SYMBOL`, `System.map`, `/proc/kallsyms`, `"EXPORT_SYMBOL lwn.net"`
 
-#### Technic link:https://lists.kernelnewbies.org/pipermail/kernelnewbies/2014-January/009617.html[#1]
+#### Technic #1
+https://gist.github.com/smalinux/52a4b28da519d418693cd3d9e033cd24:[How to make core function depend on module function] :
+
 http://stackoverflow.com/questions/11463184/how-to-use-exported-symbols-in-the-linux-kernel
 http://stackoverflow.com/questions/1196944/can-i-replace-a-linux-kernel-function-with-a-module
 
@@ -200,7 +202,7 @@ loaded in order to let the boot process continue.
 
 References:
 
-* The Kernel Newbie Corner: “initrd” and “initramfs”–What’s Up With That?
+* https://gist.github.com/smalinux/52a4b28da519d418693cd3d9e033cd24:[The Kernel Newbie Corner: “initrd” and “initramfs”–What’s Up With That?]
 * `Documentation/filesystems/ramfs-rootfs-initramfs.rst`
 * https://github.com/cirosantilli/linux-kernel-module-cheat#initrd[]
 
